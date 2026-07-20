@@ -1,3 +1,4 @@
+#!/bin/sh
 wget --no-check-certificate https://ssd.jpl.nasa.gov/ftp/eph/planets/fortran/asc2eph.f &&
 sed -i '/PARAMETER ( NRECL = 4 )/s/^C//' asc2eph.f &&
 gfortran asc2eph.f -o asc2eph
