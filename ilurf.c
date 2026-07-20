@@ -214,4 +214,6 @@ int main (void)
   calceph_close(eph[1]);
   calceph_close(eph[2]);
   free(polynomials);
+
+  return 0;
 }
