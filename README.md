@@ -41,6 +41,8 @@ cd ..
 ./ilurf-spice
 ```
 
+The output files are `ilurf2026.bsp` and `ilurf2026.bpc`.
+
 ## License
 
 The entire contents of this repository is public domain.
