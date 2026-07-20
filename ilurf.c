@@ -183,7 +183,7 @@ int main (void)
         }
       }
 
-      // INPOP has different zero for longitude libration;
+      // INPOP has a different zero point for longitude libration;
       // adjust to match others in the weighted sum
       libr[2][2] += 2 * M_PI * 408;
       
@@ -196,7 +196,7 @@ int main (void)
       calc_chebyshev_coefficients(a_knots[j], polynomials + NUM_COEF * (3 * irecord + j));
   }
 
-  // Save orbit
+  // Save libration
   if (!writeph_pck2_seq_write(weph_libration, NAIFID_MOON, 1,
                               jd_from, 0.0, jd_to, 0.0,
                               step_libration, polynomials, nrecords_libration,
