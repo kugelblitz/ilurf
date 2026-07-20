@@ -16,7 +16,7 @@
 
 /* Macros and global variables are awesome */
 
-double weights[3] = 
+static double weights[3] = 
   {
     0.167596331684500, // DE
     0.451454072137127, // EPM
