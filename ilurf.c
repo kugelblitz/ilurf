@@ -71,8 +71,8 @@ int main (void)
   
   t_calcephbin *eph[3];
   const char* filenames_epm[] = {"epm2021.bsp", "moonlibr_epm2021.bpc", "moonlibr_epm2021.tf"};
-  const char* filenames_inpop[] = {"inpop21a_TDB_m1000_p1000_spice.bsp", "inpop21a_TDB_m1000_p1000_spice.bpc",
-                                   "inpop21a_TDB_m1000_p1000_spice.tf"};
+  const char* filenames_inpop[] = {"inpop21a_TDB_m100_p100_spice.bsp", "inpop21a_TDB_m100_p100_spice.bpc",
+                                   "inpop21a_TDB_m100_p100_spice.tf"};
 
   eph[0] = calceph_open("de430/JPLEPH");
   eph[1] = calceph_open_array(3, filenames_epm);
