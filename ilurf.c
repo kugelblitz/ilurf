@@ -90,7 +90,6 @@ int main (void)
   double step_libration = 5.0; // libration is stored by 5-day intervals
   int    nrecords_orbit     = (int)((jd_to - jd_from) / step_orbit);
   int    nrecords_libration = (int)((jd_to - jd_from) / step_libration);
-  double jd_cur;
 
   /* Open output files */
   t_writephbin *weph_orbit     = writeph_spk_create("ilurf2026.bsp", "ILuRF2026_Orbit", 0);
@@ -162,7 +161,6 @@ int main (void)
   
   for (int irecord = 0; irecord < nrecords_libration; irecord++)
   {
-    int i;
     double a_knots[3][NUM_KNOTS];
 
     for (int i = 0; i < NUM_KNOTS; i++)
