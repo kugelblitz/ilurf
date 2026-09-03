@@ -15,9 +15,9 @@
 ## Download ephemeris
 
 ```
-download-epm.sh &&
-download-inpop.sh &&
-cd de430 && download-de430.sh
+./download-epm.sh &&
+./download-inpop.sh &&
+cd de430 && ./download-de430.sh
 ```
 
 ### Convert DE430 to the binary DE format
