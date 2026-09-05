@@ -4,14 +4,24 @@
 
 - Linux
 
-- Wget, GNU Fortran, Calceph, GCC
+- Wget, GNU Fortran, GCC
 
-    Assuming you are on Debian 13+ or similar distribution:
+    Assuming you are on Debian or similar distribution:
+  
+    ```
+    sudo apt-get install wget gfortran gcc
+    ```
+
+- Calceph 5.0.0 or later
+  
+    If you are on Debian 13+ or similar distribution:
     
     ```
-    sudo apt-get install wget gfortran gcc libcalceph-dev
+    sudo apt-get install libcalceph-dev
     ```
 
+    For older or non-Debian distributions, please see the [installation instructions](https://calceph.imcce.fr/installation/linux).
+  
 ## Download ephemeris
 
 ```
